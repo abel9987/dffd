@@ -5,6 +5,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          docker login -u abel9987-p Asm@12345*
+          docker login -u abel9987 -p Asm@12345*
           docker build -t abel9987/app2:latest .
           docker push abel9987/app2:latest
